@@ -2,6 +2,7 @@ apiVersion: config.humanitec.io/v1b1
 kind: ScoreDeployConfig
 workloads:
   - specFile: ./account-service/score.yaml
+    extensionsFile: ./account-service/humanitec.score.yaml
   - specFile: ./database/score.yaml
   - specFile: ./ingress/score.yaml
   - specFile: ./people-service/score.yaml
