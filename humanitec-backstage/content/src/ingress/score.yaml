@@ -8,6 +8,8 @@ containers:
     image: .
     variables:
       DATABASE_TCP_HOST: "${resources.database.name}"
+    args:
+      - NGINX_HOST=${TRADERX_FQDN:-localhost}
 service:
   ports:
     web:
