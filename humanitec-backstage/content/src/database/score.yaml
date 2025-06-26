@@ -13,7 +13,7 @@ service:
     tcp:
       port: 18082
       targetPort: 18082
-    pg:
+    postgres:
       port: 18083
       targetPort: 18083
     web:
