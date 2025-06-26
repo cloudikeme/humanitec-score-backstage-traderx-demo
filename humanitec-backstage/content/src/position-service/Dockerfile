@@ -1,0 +1,1 @@
+FROM ghcr.io/finos/traderx/position-service:latest
