@@ -5,7 +5,7 @@ metadata:
     tags: "java,spring"
 containers:
   account-service:
-    image: .
+    image: ghcr.io/finos/traderx/account-service:latest
     variables:
       DATABASE_TCP_HOST: "${resources.database.name}"
       PEOPLE_SERVICE_HOST: "${resources.people-service.name}"
