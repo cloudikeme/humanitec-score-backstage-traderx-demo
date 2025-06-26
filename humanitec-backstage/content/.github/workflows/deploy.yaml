@@ -47,16 +47,16 @@ jobs:
     strategy:
       matrix:
         src:
-          - account-service
           - database
-          - ingress
-          - people-service
-          - position-service
           - reference-data
           - trade-feed
+          - people-service
+          - account-service
+          - position-service
           - trade-processor
           - trade-service
           - web-frontend
+          - ingress
       fail-fast: false
     permissions:
       id-token: write
