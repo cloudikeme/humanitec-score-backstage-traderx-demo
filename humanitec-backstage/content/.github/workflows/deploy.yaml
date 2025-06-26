@@ -47,17 +47,16 @@ jobs:
     strategy:
       matrix:
         src:
-          - ad
-          - cart
-          - checkout
-          - currency
-          - email
-          - frontend
-          - loadgenerator
-          - payment
-          - productcatalog
-          - recommendation
-          - shipping
+          - account-service
+          - database
+          - ingress
+          - people-service
+          - position-service
+          - reference-data
+          - trade-feed
+          - trade-processor
+          - trade-service
+          - web-frontend
       fail-fast: false
     permissions:
       id-token: write
