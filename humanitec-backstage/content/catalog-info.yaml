@@ -3,12 +3,12 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
     annotations:
-        github.com/project-slug: Humanitec-DemoOrg/traderx-demo
+        github.com/project-slug: cloudikeme/humanitec-score-backstage-traderx-demo
     description: traderx-demo
     links:
         - icon: github
           title: Repository
-          url: https://github.com/Humanitec-DemoOrg/traderx-demo
+          url: https://github.com/cloudikeme/humanitec-score-backstage-traderx-demo.git
     name: traderx-demo
 spec:
     owner: user:guest
@@ -17,12 +17,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
     annotations:
-        github.com/project-slug: Humanitec-DemoOrg/traderx-demo
+        github.com/project-slug: cloudikeme/humanitec-score-backstage-traderx-demo
     description: account-service
     links:
         - icon: github
           title: Repository
-          url: https://github.com/Humanitec-DemoOrg/traderx-demo
+          url: https://github.com/cloudikeme/humanitec-score-backstage-traderx-demo.git
     name: traderx-demo-account-service
     tags:
         - java
@@ -41,12 +41,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
     annotations:
-        github.com/project-slug: Humanitec-DemoOrg/traderx-demo
+        github.com/project-slug: cloudikeme/humanitec-score-backstage-traderx-demo
     description: database
     links:
         - icon: github
           title: Repository
-          url: https://github.com/Humanitec-DemoOrg/traderx-demo
+          url: https://github.com/cloudikeme/humanitec-score-backstage-traderx-demo.git
     name: traderx-demo-database
     tags:
         - java
@@ -62,12 +62,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
     annotations:
-        github.com/project-slug: Humanitec-DemoOrg/traderx-demo
+        github.com/project-slug: cloudikeme/humanitec-score-backstage-traderx-demo
     description: ingress
     links:
         - icon: github
           title: Repository
-          url: https://github.com/Humanitec-DemoOrg/traderx-demo
+          url: https://github.com/cloudikeme/humanitec-score-backstage-traderx-demo.git
     name: traderx-demo-ingress
     tags:
         - nginx
@@ -93,12 +93,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
     annotations:
-        github.com/project-slug: Humanitec-DemoOrg/traderx-demo
+        github.com/project-slug: cloudikeme/humanitec-score-backstage-traderx-demo
     description: people-service
     links:
         - icon: github
           title: Repository
-          url: https://github.com/Humanitec-DemoOrg/traderx-demo
+          url: https://github.com/cloudikeme/humanitec-score-backstage-traderx-demo.git
     name: traderx-demo-people-service
     tags:
         - dotnet
@@ -113,12 +113,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
     annotations:
-        github.com/project-slug: Humanitec-DemoOrg/traderx-demo
+        github.com/project-slug: cloudikeme/humanitec-score-backstage-traderx-demo
     description: position-service
     links:
         - icon: github
           title: Repository
-          url: https://github.com/Humanitec-DemoOrg/traderx-demo
+          url: https://github.com/cloudikeme/humanitec-score-backstage-traderx-demo.git
     name: traderx-demo-position-service
     tags:
         - java
@@ -136,12 +136,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
     annotations:
-        github.com/project-slug: Humanitec-DemoOrg/traderx-demo
+        github.com/project-slug: cloudikeme/humanitec-score-backstage-traderx-demo
     description: reference-data
     links:
         - icon: github
           title: Repository
-          url: https://github.com/Humanitec-DemoOrg/traderx-demo
+          url: https://github.com/cloudikeme/humanitec-score-backstage-traderx-demo.git
     name: traderx-demo-reference-data
     tags:
         - nodejs
@@ -157,12 +157,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
     annotations:
-        github.com/project-slug: Humanitec-DemoOrg/traderx-demo
+        github.com/project-slug: cloudikeme/humanitec-score-backstage-traderx-demo
     description: trade-feed
     links:
         - icon: github
           title: Repository
-          url: https://github.com/Humanitec-DemoOrg/traderx-demo
+          url: https://github.com/cloudikeme/humanitec-score-backstage-traderx-demo.git
     name: traderx-demo-trade-feed
     tags:
         - nodejs
@@ -178,12 +178,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
     annotations:
-        github.com/project-slug: Humanitec-DemoOrg/traderx-demo
+        github.com/project-slug: cloudikeme/humanitec-score-backstage-traderx-demo
     description: trade-processor
     links:
         - icon: github
           title: Repository
-          url: https://github.com/Humanitec-DemoOrg/traderx-demo
+          url: https://github.com/cloudikeme/humanitec-score-backstage-traderx-demo.git
     name: traderx-demo-trade-processor
     tags:
         - java
@@ -202,12 +202,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
     annotations:
-        github.com/project-slug: Humanitec-DemoOrg/traderx-demo
+        github.com/project-slug: cloudikeme/humanitec-score-backstage-traderx-demo
     description: trade-service
     links:
         - icon: github
           title: Repository
-          url: https://github.com/Humanitec-DemoOrg/traderx-demo
+          url: https://github.com/cloudikeme/humanitec-score-backstage-traderx-demo.git
     name: traderx-demo-trade-service
     tags:
         - java
@@ -229,12 +229,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
     annotations:
-        github.com/project-slug: Humanitec-DemoOrg/traderx-demo
+        github.com/project-slug: cloudikeme/humanitec-score-backstage-traderx-demo
     description: web-frontend
     links:
         - icon: github
           title: Repository
-          url: https://github.com/Humanitec-DemoOrg/traderx-demo
+          url: https://github.com/cloudikeme/humanitec-score-backstage-traderx-demo.git
     name: traderx-demo-web-frontend
     tags:
         - html
