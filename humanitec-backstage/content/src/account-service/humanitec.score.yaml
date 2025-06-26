@@ -2,12 +2,7 @@ apiVersion: humanitec.org/v1b1
 profile: humanitec/default-module
 spec:
   containers:
-  ingress:
-    image: .
-    variables:
-      DATABASE_TCP_HOST: "${resources.database.name}"
-service:
-  ports:
-    web:
-      port: 8080
-      targetPort: 8080
+    ingress:
+      image: .
+        args:
+          - NGINX_HOST=${TRADERX_FQDN:-localhost}
