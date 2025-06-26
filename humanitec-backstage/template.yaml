@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: onlineboutique-microservices-template
-  title: Online Boutique Microservices Template
-  description: An Example Microservices App - OnlineBoutique
+  name: traderx-microservices-template
+  title: TraderX Microservices Template
+  description: An Example Microservices App - TraderX
   tags:
     - score
     - humanitec
@@ -12,7 +12,7 @@ spec:
   type: service
 
   parameters:
-    - title: New Online Boutique Microservices
+    - title: New TraderX Microservices
       required:
         - componentName
       properties:
