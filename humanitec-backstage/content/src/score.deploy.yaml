@@ -6,7 +6,6 @@ workloads:
   - specFile: ./database/score.yaml
     extensionsFile: ./database/humanitec.score.yaml
   - specFile: ./ingress/score.yaml
-    extensionsFile: ./ingress/humanitec.score.yaml
   - specFile: ./people-service/score.yaml
   - specFile: ./position-service/score.yaml
   - specFile: ./reference-data/score.yaml
