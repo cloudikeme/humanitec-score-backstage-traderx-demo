@@ -86,7 +86,7 @@ If you want to run TraderX services locally without Humanitec:
 
 * Use [`score-k8s`](https://github.com/score-spec/score-k8s) or [`score-compose`](https://github.com/score-spec/score-compose)
 
-Refer to the (Reference tutorial repo)[refence-tutorial-repo] for detailed instructions on setting up local environments.
+Refer to the [Official Humanitec Reference Tutorial Repo](#-reference-tutorial-repo) for detailed instructions on setting up local environments.
 
 ---
 
