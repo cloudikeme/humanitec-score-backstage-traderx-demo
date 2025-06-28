@@ -80,13 +80,41 @@ Once the platform is set up:
 
 ---
 
-## ⚙️ Local Deployment (Optional)
+## ⚙️ Local Deployment with Score Drivers
 
-If you want to run TraderX services locally without Humanitec:
+> 🧱 This demo builds upon the official [**TraderX CLI Tutorial**](https://github.com/Humanitec-DemoOrg/traderx-demo), part of the [Humanitec-DemoOrg](https://github.com/Humanitec-DemoOrg) collection — which showcases how to deploy Score workloads using CLI tools like `score-compose`, `score-k8s`, and `humctl`.
 
-* Use [`score-k8s`](https://github.com/score-spec/score-k8s) or [`score-compose`](https://github.com/score-spec/score-compose)
 
-Refer to the [Official Humanitec Reference Tutorial Repo](#-reference-tutorial-repo) for detailed instructions on setting up local environments.
+To run services locally using the same Score spec and Humanitec drivers:
+
+```bash
+# Validate the Score workload
+score validate -f score.yaml
+
+# Run with Docker Compose
+score-compose run -f score.yaml
+
+# Run on local Kubernetes (e.g., kind, minikube)
+score-k8s run -f score.yaml
+
+# Deploy to Humanitec environment
+humctl deploy \
+  --app online-boutique \
+  --env development \
+  -f score.yaml \
+  --message "Deploying Online Boutique via CLI"
+```
+
+The **official demo focuses on CLI-based deployment and dynamic infra provisioning**.
+
+This repo extends that foundation by:
+
+✅ Turning workloads into reusable **Backstage Golden Paths**
+✅ Wiring the experience into a **self-service IDP portal**
+✅ Running everything locally using **PocketIDP** for rapid iteration
+✅ Giving developers a visual interface to scaffold, deploy, and manage services
+
+> 🔁 You get the best of both worlds: the CLI power of the official tutorial and the seamless self-service UX of Backstage + Humanitec.
 
 ---
 
@@ -94,10 +122,10 @@ Refer to the [Official Humanitec Reference Tutorial Repo](#-reference-tutorial-r
 
 ```
 .
-├── score.yaml                         # Main Score workload spec
+├── humanitec-backstage/content/src/score.deploy.yaml                         # Main Score workload spec
 ├── humanitec-resource-definitions/   # Infrastructure mapping files
-├── backstage-templates/              # Backstage software templates
-├── .github/workflows/ci.yaml         # GitHub Actions CI config (optional)
+├── humanitec-backstage/template.yaml              # Backstage software templates
+├── .github/workflows/deploy.yaml         # GitHub Actions CI config
 └── README.md                         # This file
 ```
 
