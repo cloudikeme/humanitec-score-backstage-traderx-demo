@@ -33,11 +33,11 @@ Platform Engineers are responsible for defining and wiring the platform foundati
 
 1. **Apply Resource Definitions**
 
-   Located in [`humanitec-resource-definitions/`](./humanitec-resource-definitions/), these map abstract resources requests in `score.yaml` to real infrastructure like Postgres, Redis, or DNS.
+   Located in [`humanitec-resource-definitions/`](-humanitec-resource-definitions/), these map abstract resources requests in `score.yaml` to real infrastructure like Postgres, Redis, or DNS.
 
    ```bash
    humctl create -f humanitec-resource-definitions/
-````
+
 
 2. **Register Backstage Templates**
 
@@ -141,4 +141,3 @@ This project is maintained by Platform Architects committed to simplifying infra
 * [Platform Engineering Slack](https://platformengineering.org/slack)
 
 ```
----
