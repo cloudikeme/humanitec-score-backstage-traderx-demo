@@ -1,5 +1,0 @@
-containers:
-  ingress:
-    image: .
-    args: 
-      - NGINX_HOST=${TRADERX_FQDN:-localhost}

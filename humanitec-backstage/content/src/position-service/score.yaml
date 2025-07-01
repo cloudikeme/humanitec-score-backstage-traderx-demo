@@ -8,6 +8,7 @@ containers:
     image: ghcr.io/finos/traderx/position-service:latest
     variables:
       DATABASE_TCP_HOST: "${resources.database.name}"
+      POSITION_SERVICE_PORT: "18090"
 service:
   ports:
     web:
@@ -16,3 +17,14 @@ service:
 resources:
   database:
     type: service
+  dns:
+    type: dns
+    id: dns
+  route:
+    type: route
+    params:
+      host: ${resources.dns.host}
+      path: /position-service/
+      port: 18090
+
+    

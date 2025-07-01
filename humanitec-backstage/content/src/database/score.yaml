@@ -2,12 +2,10 @@ apiVersion: score.dev/v1b1
 metadata:
   name: database
   annotations:
-    tags: "java,h2" 
-
+    tags: "java,h2"
 containers:
   database:
-    image: ghcr.io/finos/traderx/database:latest 
-
+    image: ghcr.io/finos/traderx/database:latest
 service:
   ports:
     tcp:
@@ -18,4 +16,16 @@ service:
       targetPort: 18083
     web:
       port: 18084
-      targetPort: 18084 
+      targetPort: 18084
+resources:
+  postgres:
+    type: postgres
+  dns:
+    type: dns
+    id: dns
+  route:
+    type: route
+    params:
+      host: ${resources.dns.host}
+      path: /db-web/
+      port: 18084

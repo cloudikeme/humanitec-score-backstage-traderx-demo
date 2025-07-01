@@ -9,6 +9,7 @@ containers:
     variables:
       DATABASE_TCP_HOST: "${resources.database.name}"
       PEOPLE_SERVICE_HOST: "${resources.people-service.name}"
+      ACCOUNT_SERVICE_PORT: "18088"
 service:
   ports:
     web:
@@ -19,3 +20,12 @@ resources:
     type: service
   database:
     type: service
+  dns:
+    type: dns
+    id: dns
+  route:
+    type: route
+    params:
+      host: ${resources.dns.host}
+      path: /account-service/
+      port: 18088
